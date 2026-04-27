@@ -1,0 +1,19 @@
+# Credentials — NEVER commit
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Logs (keep sample logs, ignore runtime ones)
+# logs/*.log   # uncomment to ignore all logs
+
+# IDE
+.idea/
+.vscode/
+*.swp

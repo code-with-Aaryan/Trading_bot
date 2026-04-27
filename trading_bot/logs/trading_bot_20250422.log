@@ -1,0 +1,24 @@
+2025-04-22 10:15:01 | INFO     | trading_bot | Logging initialised — file: logs/trading_bot_20250422.log
+2025-04-22 10:15:01 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet: https://testnet.binancefuture.com)
+2025-04-22 10:15:01 | INFO     | trading_bot.orders | Placing MARKET order | symbol=BTCUSDT side=BUY qty=0.001
+2025-04-22 10:15:01 | DEBUG    | trading_bot.client | ORDER REQUEST params={"symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "quantity": "0.001"}
+2025-04-22 10:15:02 | DEBUG    | trading_bot.client | ORDER RESPONSE {"orderId": 4429920965, "symbol": "BTCUSDT", "status": "FILLED", "clientOrderId": "x-xcKtGhcub6b3be3d0e", "price": "0", "avgPrice": "93412.50000", "origQty": "0.001", "executedQty": "0.001", "cumQty": "0.001", "cumQuote": "93.41250", "timeInForce": "GTC", "type": "MARKET", "reduceOnly": false, "closePosition": false, "side": "BUY", "positionSide": "BOTH", "stopPrice": "0", "workingType": "CONTRACT_PRICE", "priceProtect": false, "origType": "MARKET", "priceMatch": "NONE", "selfTradePreventionMode": "NONE", "goodTillDate": 0, "updateTime": 1745316902000}
+2025-04-22 10:15:02 | INFO     | trading_bot.orders | MARKET order placed | orderId=4429920965 status=FILLED executedQty=0.001 avgPrice=93412.50000
+2025-04-22 10:16:30 | INFO     | trading_bot | Logging initialised — file: logs/trading_bot_20250422.log
+2025-04-22 10:16:30 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet: https://testnet.binancefuture.com)
+2025-04-22 10:16:30 | INFO     | trading_bot.orders | Placing LIMIT order | symbol=BTCUSDT side=SELL qty=0.001 price=100000 tif=GTC
+2025-04-22 10:16:30 | DEBUG    | trading_bot.client | ORDER REQUEST params={"symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "quantity": "0.001", "price": "100000", "timeInForce": "GTC"}
+2025-04-22 10:16:31 | DEBUG    | trading_bot.client | ORDER RESPONSE {"orderId": 4429921188, "symbol": "BTCUSDT", "status": "NEW", "clientOrderId": "x-xcKtGhcud1e2f4a9b", "price": "100000", "avgPrice": "0.00000", "origQty": "0.001", "executedQty": "0.000", "cumQty": "0.000", "cumQuote": "0.00000", "timeInForce": "GTC", "type": "LIMIT", "reduceOnly": false, "closePosition": false, "side": "SELL", "positionSide": "BOTH", "stopPrice": "0", "workingType": "CONTRACT_PRICE", "priceProtect": false, "origType": "LIMIT", "priceMatch": "NONE", "selfTradePreventionMode": "NONE", "goodTillDate": 0, "updateTime": 1745316991000}
+2025-04-22 10:16:31 | INFO     | trading_bot.orders | LIMIT order placed | orderId=4429921188 status=NEW price=100000 qty=0.001
+2025-04-22 10:18:10 | INFO     | trading_bot | Logging initialised — file: logs/trading_bot_20250422.log
+2025-04-22 10:18:10 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet: https://testnet.binancefuture.com)
+2025-04-22 10:18:10 | INFO     | trading_bot.orders | Placing STOP_MARKET order | symbol=BTCUSDT side=BUY qty=0.001 stopPrice=85000
+2025-04-22 10:18:10 | DEBUG    | trading_bot.client | ORDER REQUEST params={"symbol": "BTCUSDT", "side": "BUY", "type": "STOP_MARKET", "quantity": "0.001", "stopPrice": "85000"}
+2025-04-22 10:18:11 | DEBUG    | trading_bot.client | ORDER RESPONSE {"orderId": 4429921340, "symbol": "BTCUSDT", "status": "NEW", "clientOrderId": "x-xcKtGhcu9f3c7e2a1", "price": "0", "avgPrice": "0.00000", "origQty": "0.001", "executedQty": "0.000", "cumQty": "0.000", "cumQuote": "0.00000", "timeInForce": "GTC", "type": "STOP_MARKET", "reduceOnly": false, "closePosition": false, "side": "BUY", "positionSide": "BOTH", "stopPrice": "85000", "workingType": "CONTRACT_PRICE", "priceProtect": false, "origType": "STOP_MARKET", "priceMatch": "NONE", "selfTradePreventionMode": "NONE", "goodTillDate": 0, "updateTime": 1745317091000}
+2025-04-22 10:18:11 | INFO     | trading_bot.orders | STOP_MARKET order placed | orderId=4429921340 status=NEW stopPrice=85000 qty=0.001
+2025-04-22 10:19:55 | INFO     | trading_bot | Logging initialised — file: logs/trading_bot_20250422.log
+2025-04-22 10:19:55 | INFO     | trading_bot.client | BinanceFuturesClient initialised (testnet: https://testnet.binancefuture.com)
+2025-04-22 10:19:55 | INFO     | trading_bot.orders | Placing LIMIT order | symbol=INVALIDPAIR side=BUY qty=0.001 price=50000 tif=GTC
+2025-04-22 10:19:55 | DEBUG    | trading_bot.client | ORDER REQUEST params={"symbol": "INVALIDPAIR", "side": "BUY", "type": "LIMIT", "quantity": "0.001", "price": "50000", "timeInForce": "GTC"}
+2025-04-22 10:19:56 | ERROR    | trading_bot.client | ClientError | status=400 code=-1121 msg=Invalid symbol.
+2025-04-22 10:19:56 | ERROR    | trading_bot.cli | BinanceClientError: [HTTP 400] Binance error -1121: Invalid symbol.
